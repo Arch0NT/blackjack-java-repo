@@ -1,0 +1,27 @@
+﻿<meta chahrset="utf-8">
+<script>
+var red = 1;
+var black = -1;
+var zero = 0;
+var round = 1000000;
+var arr = [];
+var maxRed = 0;
+var count = 0;
+var j = 0;
+for (i=0;i<round;i++) {
+	arr[i] = black + parseInt((Math.random() * ((red - black) + 1)));
+}
+for (i=0;i<round;i++){
+	if (arr[i]==red) {
+		count++;
+	} else {
+		if (count>maxRed) {
+			maxRed=count;
+			j=i;
+		}
+		count=0;
+	}
+}
+alert (arr);
+alert ("Максимальная последовательность красных (1) = "+maxRed+" последовательность заканчивается на "+j+"-ом элементе");
+</script>

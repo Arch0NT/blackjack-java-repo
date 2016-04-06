@@ -1,0 +1,10 @@
+﻿<meta chahrset="utf-8">
+<script>
+var dep=parseInt(prompt("Введите сумму вклада"));
+var proc=parseInt(prompt("Введите процентную ставку по вкладу"));
+var age=parseInt(prompt("Введите срок вклада"));
+for (i=1;i<=age;i++) {
+	dep=dep+(dep*proc/100);
+	alert ("Сумма вклада за "+i+"-й год = "+dep);
+}
+</script>
