@@ -53,7 +53,7 @@ while ((getSum(player)<21) && (prompt(getStatus())=='1')) {
 	player.push(getCard());
 }
 
-while ((getSum(dealer)<17) && (getSum(player)!=21)) {
+while ((getSum(dealer)<17) && (getSum(player)<21)) {
 	dealer.push(getCard());
 }
 
