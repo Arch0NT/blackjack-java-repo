@@ -49,7 +49,7 @@ var dealer = [getCard()];
 var player = [getCard(), getCard()];
 var s = "\nХотите еще карту? 1 - да, иначе - нет:";
 
-while ((getSum(player)<=21) && (prompt(getStatus())=='1')) {
+while ((getSum(player)<21) && (prompt(getStatus())=='1')) {
 	player.push(getCard());
 }
 
