@@ -59,7 +59,7 @@ while ((getSum(dealer)<17) && (getSum(player)!=21)) {
 
 if (getSum(player)==21) {
 	s='\nИгрок, поздравляем! У Вас Black Jack';
-} else if (getSum(player>21)) {
+} else if (getSum(player)>21) {
 	s="\nИгрок, у Вас перебор :-(";
 } else if (getSum(dealer)>21) {
 	s='\nИгрок, поздравляем! У Дилера перебор';
